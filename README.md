@@ -12,3 +12,6 @@ It's pretty simple:
 
     ./scripts/build.sh
     ./scripts/run.sh
+
+You can test the web-service endpoints by navigating your browser to:
+http://localhost:8080/swagger-ui/
