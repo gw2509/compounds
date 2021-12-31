@@ -8,7 +8,7 @@ import java.util.Objects;
 @Entity
 public class AssayResult {
     private @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "result_id")
     Long id;
 

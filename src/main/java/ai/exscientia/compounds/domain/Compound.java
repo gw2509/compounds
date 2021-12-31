@@ -7,7 +7,7 @@ import java.util.Set;
 
 @Entity
 public class Compound {
-    private @Id @GeneratedValue @Column(name="compound_id") Long id;
+    private @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name="compound_id") Long id;
     private String smiles;
     private double molecularWeight;
     private double alogp;

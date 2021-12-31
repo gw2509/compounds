@@ -21,14 +21,16 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:8080/compounds/2195979",
+							"raw": "localhost:8080/api/v1/compounds/2251994",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"compounds",
-								"2195979"
+								"2251994"
 							]
 						}
 					},
@@ -40,12 +42,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/compounds/1117973",
+							"raw": "localhost:8080/api/v1/compounds/1117973",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"compounds",
 								"1117973"
 							]
@@ -59,12 +63,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/compounds",
+							"raw": "localhost:8080/api/v1/compounds",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"compounds"
 							]
 						}
@@ -77,12 +83,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/compounds/999999",
+							"raw": "localhost:8080/api/v1/compounds/999999",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"compounds",
 								"999999"
 							]
@@ -96,12 +104,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/compounds/2195979",
+							"raw": "localhost:8080/api/v1/compounds/2195979",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"compounds",
 								"2195979"
 							]
@@ -115,12 +125,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/compounds/999999",
+							"raw": "localhost:8080/api/v1/compounds/999999",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"compounds",
 								"999999"
 							]
@@ -143,12 +155,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/compounds",
+							"raw": "localhost:8080/api/v1/compounds",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"compounds"
 							]
 						}
@@ -162,7 +176,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"smiles\": \"NEW NEW CCOC1=CC(=O)N(C)C=C1c2cc(NC(=O)CNC(=O)c3ccccc3)ccc2Oc4ccc(F)cc4F\",\n    \"molecularWeight\": 533.52271,\n    \"alogp\": 999.999,\n    \"molecularFormula\": \"C29H25F2N3O5\",\n    \"numRings\": 4,\n    \"image\": \"images/2195979.png\"\n}",
+							"raw": "{\n    \"smiles\": \"**NEW** CCOC1=CC(=O)N(C)C=C1c2cc(NC(=O)CNC(=O)c3ccccc3)ccc2Oc4ccc(F)cc4F\",\n    \"molecularWeight\": 533.52271,\n    \"alogp\": 999.999,\n    \"molecularFormula\": \"C29H25F2N3O5\",\n    \"numRings\": 4,\n    \"image\": \"images/2195979.png\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -170,12 +184,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/compounds/1117973",
+							"raw": "localhost:8080/api/v1/compounds/1117973",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"compounds",
 								"1117973"
 							]
@@ -198,12 +214,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/compounds/999999",
+							"raw": "localhost:8080/api/v1/compounds/999999",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"compounds",
 								"999999"
 							]
@@ -222,12 +240,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/assayresults/17790209",
+							"raw": "localhost:8080/api/v1/assayresults/17790209",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"assayresults",
 								"17790209"
 							]
@@ -241,12 +261,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/assayresults",
+							"raw": "localhost:8080/api/v1/assayresults",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"assayresults"
 							]
 						}
@@ -259,12 +281,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/assayresults/999999",
+							"raw": "localhost:8080/api/v1/assayresults/999999",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"assayresults",
 								"999999"
 							]
@@ -278,12 +302,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/assayresults/17790209",
+							"raw": "localhost:8080/api/v1/assayresults/17790209",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"assayresults",
 								"17790209"
 							]
@@ -297,12 +323,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/assayresults/999999",
+							"raw": "localhost:8080/api/v1/assayresults/999999",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"assayresults",
 								"999999"
 							]
@@ -317,7 +345,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"target\": \"Bromodomain-containing protein 4\",\n    \"result\": \"Ki\",\n    \"operator\": \"=\",\n    \"value\": 999.9,\n    \"unit\": \"nM\",\n    \"compound\": \n        {\n            \"id\": 2195979    \n        }\n}",
+							"raw": "{\n    \"target\": \"Bromodomain-containing protein 4\",\n    \"result\": \"Ki\",\n    \"operator\": \"=\",\n    \"value\": 99999.9,\n    \"unit\": \"nM\",\n    \"compound\": \n        {\n            \"id\": 2251995    \n        }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -325,12 +353,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/assayresults",
+							"raw": "localhost:8080/api/v1/assayresults",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"assayresults"
 							]
 						}
@@ -352,12 +382,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/assayresults/17790209",
+							"raw": "localhost:8080/api/v1/assayresults/17790209",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"assayresults",
 								"17790209"
 							]
@@ -380,12 +412,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/assayresults/999999",
+							"raw": "localhost:8080/api/v1/assayresults/999999",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"api",
+								"v1",
 								"assayresults",
 								"999999"
 							]
