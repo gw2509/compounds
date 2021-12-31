@@ -1,0 +1,399 @@
+{
+	"info": {
+		"_postman_id": "e1a65540-b5b2-41f8-85f0-1af12bc550a5",
+		"name": "Exscientia Coding Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Compounds",
+			"item": [
+				{
+					"name": "One Compound",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/compounds/2195979",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"compounds",
+								"2195979"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Compound (>1assays)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/compounds/1117973",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"compounds",
+								"1117973"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Compounds",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/compounds",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"compounds"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Non-existent Compound",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/compounds/999999",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"compounds",
+								"999999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Compound",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/compounds/2195979",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"compounds",
+								"2195979"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Non-existent Compound",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/compounds/999999",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"compounds",
+								"999999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Compound",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"smiles\": \"NEW CCOC1=CC(=O)N(C)C=C1c2cc(NC(=O)CNC(=O)c3ccccc3)ccc2Oc4ccc(F)cc4F\",\n    \"molecularWeight\": 533.52271,\n    \"alogp\": 3.213,\n    \"molecularFormula\": \"C29H25F2N3O5\",\n    \"numRings\": 4,\n    \"image\": \"images/2195979.png\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/compounds",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"compounds"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Compound",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"smiles\": \"NEW NEW CCOC1=CC(=O)N(C)C=C1c2cc(NC(=O)CNC(=O)c3ccccc3)ccc2Oc4ccc(F)cc4F\",\n    \"molecularWeight\": 533.52271,\n    \"alogp\": 999.999,\n    \"molecularFormula\": \"C29H25F2N3O5\",\n    \"numRings\": 4,\n    \"image\": \"images/2195979.png\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/compounds/1117973",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"compounds",
+								"1117973"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Non-existent Compound",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"smiles\": \"NEW NEW CCOC1=CC(=O)N(C)C=C1c2cc(NC(=O)CNC(=O)c3ccccc3)ccc2Oc4ccc(F)cc4F\",\n    \"molecularWeight\": 533.52271,\n    \"alogp\": 999.999,\n    \"molecularFormula\": \"C29H25F2N3O5\",\n    \"numRings\": 4,\n    \"image\": \"images/2195979.png\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/compounds/999999",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"compounds",
+								"999999"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Assay Results",
+			"item": [
+				{
+					"name": "One Assay Result",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/assayresults/17790209",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assayresults",
+								"17790209"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Assay Results",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/assayresults",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assayresults"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Non-existent Assay Result",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/assayresults/999999",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assayresults",
+								"999999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Assay Result",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/assayresults/17790209",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assayresults",
+								"17790209"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Non-existent Assay Result",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/assayresults/999999",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assayresults",
+								"999999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Assay Result",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"target\": \"Bromodomain-containing protein 4\",\n    \"result\": \"Ki\",\n    \"operator\": \"=\",\n    \"value\": 999.9,\n    \"unit\": \"nM\",\n    \"compound\": \n        {\n            \"id\": 2195979    \n        }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/assayresults",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assayresults"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Assay Result",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"target\": \"** Changed ** Bromodomain-containing protein 4\",\n    \"result\": \"Ki\",\n    \"operator\": \"=\",\n    \"value\": 888.8,\n    \"unit\": \"nM\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/assayresults/17790209",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assayresults",
+								"17790209"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Non-existent Assay Result",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"target\": \"** Changed ** Bromodomain-containing protein 4\",\n    \"result\": \"Ki\",\n    \"operator\": \"=\",\n    \"value\": 888.8,\n    \"unit\": \"nM\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/assayresults/999999",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"assayresults",
+								"999999"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
