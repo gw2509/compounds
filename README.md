@@ -15,3 +15,6 @@ It's pretty simple:
 
 You can test the web-service endpoints by navigating your browser to:
 http://localhost:8080/swagger-ui/
+
+Alternatively, you can use the supplied Postman collection file to test from there.
+
