@@ -3,13 +3,16 @@ Exscientia&trade; Compounds API
 
 ##Overview
 
+###Web Application
 A Java-based web application which provides a CRUD REST API for compounds and their 
 associated assay results. It is backed by an in-memory relational database.
 
+###Database
 The database is populated from a SQL population script (src/main/resources/data.sql) 
 each time the web application starts up. As a consequence, any changes are not 
 persisted between invocations of the web application.
 
+###Database Population
 The SQL population script was generated from the provided data/compounds.json and 
 data/schema.json files using a Python script (scripts/json2sql.py). As of this 
 writing, this is done manually, prior to building the application. A pre-generated 
