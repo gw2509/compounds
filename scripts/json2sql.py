@@ -1,6 +1,5 @@
-import json
 import codecs
-import csv
+import json
 
 schema = json.load(codecs.open('schema.json', 'r', 'utf-8-sig'))
 data = json.load(codecs.open('compounds.json', 'r', 'utf-8-sig'))
@@ -36,8 +35,12 @@ with open('newdata.sql', 'w', encoding='UTF8') as f:
             'INSERT INTO compound (compound_id,smiles,molecular_weight,ALogP,molecular_formula,num_rings,image) ' +
             'VALUES (' + ','.join(compoundRow) + ');\n')
 
-        for assay in comp['assay_results']:
+        f.write('INSERT INTO assay_result (compound_id,result_id,target,result,operator,value,unit) VALUES\n')
+        assay_results = comp['assay_results']
+        for index, assay in enumerate(assay_results):
             assayIdNo = assayIdNo + 1
             assayRow = build_assay_sql()
-            f.write('INSERT INTO assay_result (compound_id,result_id,target,result,operator,value,unit) ' +
-                    'VALUES (' + ','.join(assayRow) + ');\n')
+            f.write('(' + ','.join(assayRow) + ')')
+            if index < len(assay_results) - 1:
+                f.write(',\n')
+        f.write(';\n')
