@@ -7,7 +7,11 @@ import java.util.Set;
 
 @Entity
 public class Compound {
-    private @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name="compound_id") Long id;
+    private @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="compound_id")
+    Long id;
+
     private String smiles;
     private double molecularWeight;
     private double alogp;
@@ -98,11 +102,12 @@ public class Compound {
     }
 
     @Override
-    public boolean equals(Object o) {//todo
+    public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Compound compound = (Compound) o;
-        return id.equals(compound.id) && smiles.equals(compound.smiles);
+
+        return id.equals(compound.id);
     }
 
     @Override

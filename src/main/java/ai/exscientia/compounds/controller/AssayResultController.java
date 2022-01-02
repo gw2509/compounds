@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1")
-class AssayResultController {
+public class AssayResultController {
 
     private final AssayResultRepository assayResultRepository;
     private final CompoundRepository compoundRepository;

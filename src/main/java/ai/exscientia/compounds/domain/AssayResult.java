@@ -98,6 +98,7 @@ public class AssayResult {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         AssayResult that = (AssayResult) o;
+
         return id.equals(that.id);
     }
 

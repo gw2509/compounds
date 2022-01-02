@@ -14,6 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1")
+public
 class CompoundController {
 
     private final CompoundRepository compoundRepository;
