@@ -1,5 +1,0 @@
-CREATE TABLE compound (
-                          id INT PRIMARY KEY,
-                          smiles VARCHAR(255),
-                          molecular_weight DECIMAL
-);
