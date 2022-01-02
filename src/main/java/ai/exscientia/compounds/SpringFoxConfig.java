@@ -17,12 +17,12 @@ import java.util.Set;
 @Configuration
 public class SpringFoxConfig {
     public static final Contact DEFAULT_CONTACT = new Contact(
-            "Gary White", "https://xkcd.com", "g.z.white@mac.com");
+            "Exscientia", "https://www.exscientia.ai", "info@exscientia.ai");
 
     public static final ApiInfo DEFAULT_API_INFO = new ApiInfo(
-            "Exscientia Compounds API", "A RESTful API into the Exscientia compounds database.", "1.0",
+            "Exscientia Compounds API", "A RESTful API into the Exscientia Compounds database.", "1.0",
             "urn:tos", DEFAULT_CONTACT,
-            "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0",Arrays.asList());
+            "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0", Arrays.asList());
 
     private static final Set<String> DEFAULT_PRODUCES_AND_CONSUMES =
             new HashSet<String>(Arrays.asList("application/json",
