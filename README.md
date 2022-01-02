@@ -45,6 +45,6 @@ Alternatively, you can use the supplied "collection" file (./postman_collection.
 
 ##Future Improvements
 
-- Improve automation by moving database script generation into the Docker&trade; configuration
+- Implement filtering and ordering features
 - Make the API more "hypermedia-driven" by following HATEAOS principles in the API design 
-
+- Improve automation by moving database script generation into the Docker&trade; configuration
