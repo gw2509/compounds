@@ -102,12 +102,12 @@ public class Compound {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Compound compound = (Compound) o;
-        return Double.compare(compound.molecularWeight, molecularWeight) == 0 && id.equals(compound.id) && smiles.equals(compound.smiles);
+        return id.equals(compound.id) && smiles.equals(compound.smiles);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, smiles, molecularWeight);//todo
+        return Objects.hash(id);
     }
 
     @Override
