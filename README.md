@@ -1,29 +1,28 @@
 Exscientia&trade; Compounds API
 ========================
 
-Overview
---------
+##Overview
 
 A Java-based web application which provides a CRUD REST API for compounds and their 
 associated assay results. It is backed by an in-memory relational database.
 
-The database is loaded from a SQL population script (src/main/resources/data.sql) each time the web 
-application starts up. As a consequence, any changes are not persisted
-between invocations.
+The database is populated from a SQL population script (src/main/resources/data.sql) 
+each time the web application starts up. As a consequence, any changes are not 
+persisted between invocations of the web application.
 
 The SQL population script was generated from the provided data/compounds.json and 
 data/schema.json files using a Python script (scripts/json2sql.py). As of this 
-writing, this is done manually, prior to building the application. 
+writing, this is done manually, prior to building the application. A pre-generated 
+SQL population script is provided for ease of deployment.
 
 See the [Usage](#usage) section for build and run instructions.
 
-Notable Features
-----------------
+##Notable Features
 
 - Dockerisation (we use Docker&trade; containers to build and run the web application)
 - Integration tests (to test the API's web-service endpoints)
-- Swagger (provides a web-based interface to the API)
-- Pageable (optional paging metadata provided for compound collections)
+- Swagger (provides a web-based interface to the API for testing and comprehension)
+- Pageable (optional endpoint with paging metadata provided for Compound collections)
 
 
 <div id="usage"></div>
