@@ -27,8 +27,7 @@ See the [Usage](#usage) section for build and run instructions.
 
 <div id="usage"></div>
 
-Usage
------
+##Usage
 
 Working from the root directory of the project, instructions are as follows:
 
@@ -44,9 +43,8 @@ http://localhost:8080/swagger-ui/
 
 Alternatively, you can use the supplied "collection" file (./postman_collection.json) in Postman&trade; to try it out from there.
 
-Future Improvements
--------------------
+##Future Improvements
 
-- Improve automation by incorporating database population into the Docker&trade; configuration
-- Make the API more "discoverable" by following HATEAOS principles in the API design 
+- Improve automation by moving database script generation into the Docker&trade; configuration
+- Make the API more "hypermedia-driven" by following HATEAOS principles in the API design 
 
