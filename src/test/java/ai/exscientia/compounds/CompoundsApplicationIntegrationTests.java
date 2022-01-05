@@ -42,17 +42,17 @@ public class CompoundsApplicationIntegrationTests {
      * Integration tests of the REST API for compounds and assay results.
      * <p>
      * Note: At present, some assert statements rather crudely search the String response to establish content and
-     * cardinality of responses. Given more time, we should modify the code to create and  interrogate the Java objects.
+     * cardinality of responses. Given more time, we should modify the code to create and interrogate Java objects.
      */
     //compounds
     @Test
-    public void requestForOneCompoundShouldReturnCompound() throws Exception {
+    public void requestForOneCompoundShouldReturnCompound() {
         assertThat(this.restTemplate.getForObject(BASE_URL + ":" + port + ENDPOINT_FOR_COMPOUNDS + EXISTING_COMPOUND_ID,
                 String.class)).contains("CCOC1=CC(=O)N(C)C=C1c2cc(NC(=O)CC3C[C@@H]4CC[C@H]3C4)ccc2Oc5ccc(F)cc5F");
     }
 
     @Test
-    public void requestForOneCompoundWithManyAssayResultsShouldContain11AssayItems() throws Exception {
+    public void requestForOneCompoundWithManyAssayResultsShouldContain11AssayItems() {
         String response = this.restTemplate.getForObject(BASE_URL + ":" + port + ENDPOINT_FOR_COMPOUNDS + COMPOUND_ID_WITH_MANY_ASSAY_RESULTS,
                 String.class);
 
@@ -60,7 +60,7 @@ public class CompoundsApplicationIntegrationTests {
     }
 
     @Test
-    public void requestForAllCompoundsShouldReturnExpectedItems() throws Exception {
+    public void requestForAllCompoundsShouldReturnExpectedItems() {
         String response = this.restTemplate.getForObject(BASE_URL + ":" + port + ENDPOINT_FOR_COMPOUNDS,
                 String.class);
 
@@ -68,13 +68,13 @@ public class CompoundsApplicationIntegrationTests {
     }
 
     @Test
-    public void requestForNonExistentCompoundShouldReturnNotFound() throws Exception {
+    public void requestForNonExistentCompoundShouldReturnNotFound() {
         assertThat(this.restTemplate.getForObject(BASE_URL + ":" + port + ENDPOINT_FOR_COMPOUNDS + NON_EXISTENT_COMPONENT_ID,
                 String.class)).contains("Could not find compound " + NON_EXISTENT_COMPONENT_ID);
     }
 
     @Test
-    public void deletionOfCompoundSucceeds() throws Exception {
+    public void deletionOfCompoundSucceeds() {
         this.restTemplate.delete(BASE_URL + ":" + port + ENDPOINT_FOR_COMPOUNDS + EXISTING_COMPOUND_ID2);
 
         assertThat(this.restTemplate.getForObject(BASE_URL + ":" + port + ENDPOINT_FOR_COMPOUNDS + EXISTING_COMPOUND_ID2,
@@ -87,7 +87,7 @@ public class CompoundsApplicationIntegrationTests {
     }
 
     @Test
-    public void creationOfnewCompoundSucceeds() throws Exception {
+    public void creationOfNewCompoundSucceeds() {
         String url = BASE_URL + ":" + port + ENDPOINT_FOR_COMPOUNDS;
         Compound newCompound = new Compound();
 
@@ -97,13 +97,13 @@ public class CompoundsApplicationIntegrationTests {
     //assay results
 
     @Test
-    public void requestForOneAssayResultReturnAssayResult() throws Exception {
+    public void requestForOneAssayResultReturnAssayResult() {
         assertThat(this.restTemplate.getForObject(BASE_URL + ":" + port + ENDPOINT_FOR_ASSAY_RESULTS + EXISTING_ASSAY_RESULT_ID,
                 String.class)).contains(EXISTING_ASSAY_RESULT_ID);
     }
 
     @Test
-    public void requestForAllAssayResultsShouldReturn163Items() throws Exception {
+    public void requestForAllAssayResultsShouldReturn163Items() {
         String response = this.restTemplate.getForObject(BASE_URL + ":" + port + ENDPOINT_FOR_ASSAY_RESULTS,
                 String.class);
 
@@ -111,13 +111,13 @@ public class CompoundsApplicationIntegrationTests {
     }
 
     @Test
-    public void requestForNonExistentAssayResultShouldReturnNotFound() throws Exception {
+    public void requestForNonExistentAssayResultShouldReturnNotFound() {
         assertThat(this.restTemplate.getForObject(BASE_URL + ":" + port + ENDPOINT_FOR_ASSAY_RESULTS + NON_EXISTENT_ASSAY_RESULT_ID,
                 String.class)).contains("Could not find assay result " + NON_EXISTENT_ASSAY_RESULT_ID);
     }
 
     @Test
-    public void deletionOfAssayResultSucceeds() throws Exception {
+    public void deletionOfAssayResultSucceeds() {
         this.restTemplate.delete(BASE_URL + ":" + port + ENDPOINT_FOR_ASSAY_RESULTS + EXISTING_ASSAY_RESULT_ID2);
 
         assertThat(this.restTemplate.getForObject(BASE_URL + ":" + port + ENDPOINT_FOR_ASSAY_RESULTS + EXISTING_ASSAY_RESULT_ID2,
